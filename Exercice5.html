@@ -6,11 +6,16 @@
   </head>
   <body>
     <div class="conteneur">
-      <img src="img/image1" id="image1" onmouseover="this.src='img/image1_2';" />
-      <img src="img/image2" id="image2" onmouseover="this.src='img/image2_2';" />
-      <img src="img/image3" id="image3" onmouseover="this.src='img/image3_2';" />
-      <img src="img/image4" id="image4" onmouseover="this.src='img/image4_2';" />
-      <img src="img/image5" id="image5" onmouseover="this.src='img/image5_2';" />
+      <img src="img/image1" onmouseover="changeImage(id);" id="image1"/>
+      <img src="img/image2" onmouseover="changeImage(id);" id="image2"/>
+      <img src="img/image3" onmouseover="changeImage(id);" id="image3"/>
+      <img src="img/image4" onmouseover="changeImage(id);" id="image4"/>
+      <img src="img/image5" onmouseover="changeImage(id);" id="image5"/>
     </div>
+    <script>
+     function changeImage(image) {
+       document.getElementById(image).src= 'img/' + image + '_2';
+     }
+    </script>
   </body>
 </html>
